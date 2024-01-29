@@ -22,7 +22,7 @@ app.post('/validation', (req, res) => {
     if (cardNumber.length !== 16) {
         validationList.push({cardNumber: "lütfen 16 hanelik kart numarasını giriniz"})
     }
-    if (cardNumber === '0000111122223333') {
+    if (cardNumber !== '0000111122223333') {
         validationList.push({cardNumber: "lütfen geçerli kart numarasını giriniz"})
     }
     if (expMonthYear.length !== 4) {
