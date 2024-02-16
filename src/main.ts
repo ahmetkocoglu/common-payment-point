@@ -25,7 +25,7 @@ app.post('/validation', (req, res) => {
     if (cardNumber !== '0000111122223333') {
         validationList.push({cardNumber: "lütfen geçerli kart numarasını giriniz"})
     }
-    if (expMonthYear.length !== 4) {
+    if (expMonthYear.length !== 5) {
         validationList.push({expMonthYear: "lütfen son kullanım tarihini ay ve yıl olarak dört hanelik giriniz (MMYY)"})
     }
     if (cvCode.length !== 3) {
